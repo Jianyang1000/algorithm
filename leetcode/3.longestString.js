@@ -70,6 +70,25 @@ var lengthOfLongestSubstring2 = function(s) {
 }
 
 
+// slide window map
+// 利用map来简化i指针的一个一个移动
+var lengthOfLongestSubstring3 = function(s) {
+    let longest = 0
+    let map = new Map()
+    let n = s.length
+    for (let j = 0, i = 0; j < n; j++) {
+        if (map.has(s[j])) {
+            i = Math.max(map.get(s[j]), i);
+        }
+        longest = Math.max(longest, j - i + 1);
+        map.set(s[j], j + 1);
+    }
+    return longest
+}
+
+
+
 console.log(lengthOfLongestSubstring('abcabcbb'))
 console.log(lengthOfLongestSubstring1('abcabcbb'))
 console.log(lengthOfLongestSubstring2('pwwkew'))
+console.log(lengthOfLongestSubstring3('abcabcbb'))
