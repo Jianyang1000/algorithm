@@ -53,6 +53,7 @@ var lengthOfLongestSubstring1 = function(s) {
 
 // slide window
 // 跟着代码走一遍就能明白原理
+// 有点和字符串匹配算法有点像
 var lengthOfLongestSubstring2 = function(s) {
     let longest = 0
     let i = 0,j = 0
