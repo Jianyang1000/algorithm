@@ -28,14 +28,16 @@ class Tree{
     }
     find(value){
         let current = this.root
-        while(current.value !== value && current !== null){
+        while(current !== null){
             if(value < current.value){
                 current = current.left
-            }else {
+            }else if(value > current.value){
                 current = current.right
+            }else {
+                return current
             }
         }
-        return current === null ? -1 : current
+        return null
     }
     prePrint(current){
         if(current === null) return
