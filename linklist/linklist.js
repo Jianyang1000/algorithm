@@ -221,13 +221,13 @@ class LRU{
 // LRUList.append(8)
 // LRUList.display()
 
-const linklist = new LinkList()
-linklist.append(1)
-linklist.append(6)
-linklist.append(7)
-linklist.append(8)
+// const linklist = new LinkList()
+// linklist.append(1)
+// linklist.append(6)
+// linklist.append(7)
+// linklist.append(8)
 
-console.log('----------------')
+// console.log('----------------')
 // linklist.makeCircle()
 // console.log(linklist.checkCircle())
 
@@ -242,4 +242,7 @@ console.log('----------------')
 // linklist.display()
 
 
-console.log(linklist.findMiddleNode())
+// console.log(linklist.findMiddleNode())
+
+
+exports.LinkList = LinkList
