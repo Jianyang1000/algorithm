@@ -1,3 +1,6 @@
+// 20,155,844,682,496,232,224
+
+
 class Stack{
     constructor(){
         this.stack = []

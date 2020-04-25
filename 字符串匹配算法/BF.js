@@ -17,5 +17,4 @@ function BFmatch(string,pattern){
 }
 
 
-
 console.log(match('jianyang','g'))

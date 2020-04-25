@@ -1,3 +1,8 @@
+// leetcode 对应 206，141，21，19，876
+
+
+
+
 class Node {
     constructor(element){
         this.data = element
